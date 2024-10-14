@@ -54,6 +54,9 @@ body {
   display: block;
   width: 100%;
 }
+.btn-cancel {
+  background-color: red;
+}
 
 .task {
   background: #f4f4f4;
@@ -66,10 +69,18 @@ body {
   border-left: 5px solid green;
 }
 
-.task h3 {
+/* .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+} */
+.task .task-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task .task-title .task-icon .myIcon {
+  margin-right: 25px;
 }
 
 .add-form {

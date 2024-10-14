@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Button = ({color, text, onClick}) => {
+const Button = ({color = 'steelblue', text = 'Click me!', onClick}) => {
 
   return (
     <div>
@@ -13,11 +13,6 @@ const Button = ({color, text, onClick}) => {
         </button>
     </div>
   )
-}
-
-Button.defaultProps = {
-  color: 'steelblue',
-  text: 'Click me!'
 }
 
 Button.propTypes = {

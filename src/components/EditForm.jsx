@@ -1,29 +1,30 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
-const AddTask = ({onAdd}) => {
-    const [text, setText] = useState("");
-    const [day, setDay] = useState("");
-    const [reminder, setReminder] = useState(false); 
+const EditForm = ({task, onSave, onCancel}) => {
+    const [text, setText] = useState(task.text);
+    const [day, setDay] = useState(task.day); 
+    const [reminder, setReminder] = useState(task.reminder);
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if (!text) {
-            alert("Please add a task!"); 
-            return; 
+        
+        // Ensure the task is not empty
+        if (!text || !day) {
+            alert("Please fill in both fields");
+            return;
         }
-        onAdd({text, day, reminder});
 
-        setText("");
-        setDay("");
-        setReminder(false);
+        // Create an updated task object and pass it to the onSave function
+        onSave({...task, text, day, reminder});
     }
+
   return (
-    <form action="" className='add-form' onSubmit={onSubmit}>
+    <form action="" className='edit-form' onSubmit={onSubmit}>
         <div className="form-control">
             <label htmlFor="">Task</label>
             <input 
                 type="text" 
-                placeholder='Add Tasks' 
+                placeholder='Edit Tasks' 
                 value={text} 
                 onChange={(e) => setText(e.target.value)} 
             />
@@ -32,7 +33,7 @@ const AddTask = ({onAdd}) => {
             <label htmlFor="">Day & Time</label>
             <input 
                 type="text" 
-                placeholder='Add Day & Time'
+                placeholder='Edit Day & Time'
                 value={day} 
                 onChange={(e) => setDay(e.target.value)} 
             />
@@ -48,8 +49,11 @@ const AddTask = ({onAdd}) => {
         </div>
 
         <input type="submit" value="Save Task" className='btn btn-block' />
+        <button onClick={onCancel} className='btn btn-block btn-cancel'>
+            Cancel
+        </button>
     </form>
   )
 }
 
-export default AddTask
+export default EditForm
