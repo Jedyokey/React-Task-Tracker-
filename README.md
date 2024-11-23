@@ -49,7 +49,7 @@ A React-based Task Tracker with a mock backend powered by JSON Server. This appl
     - Base URL: http://localhost:5000/
     - Tasks: http://localhost:5000/tasks
 3.  Database File: db.json (located in the root directory)
-    {
+    - {
         "tasks": [
             {
             "id": "1",
