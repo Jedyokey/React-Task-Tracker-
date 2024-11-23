@@ -5,6 +5,18 @@
       "text": "Prepare lunch",
       "day": "Oct 13th at 2:00pm",
       "reminder": false
+    },
+    {
+      "id": "a6f8",
+      "text": "Go to school",
+      "day": "Oct 10th at 9:00am",
+      "reminder": true
+    },
+    {
+      "id": "412f",
+      "text": "Doctors Appointment",
+      "day": "Dec 10th at 1:00pm",
+      "reminder": false
     }
   ]
 }
