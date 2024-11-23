@@ -1,11 +1,11 @@
 # React + Vite
 
-### Simple Task Tracker
+# Simple Task Tracker
 
 A React-based Task Tracker with a mock backend powered by JSON Server. This application allows users to manage their daily tasks efficiently with features such as adding, editing, deleting, and setting reminders for tasks. The app integrates with a mock backend using a JSON server to persist data.
 
 
-### Getting Started
+# Getting Started
 
 ## Prerequisites
     - Node.js installed on your system.
@@ -14,7 +14,7 @@ A React-based Task Tracker with a mock backend powered by JSON Server. This appl
 ## Installation
 1. Clone this repository.
       - git clone https://github.com/Jedyokey/React-Task-Tracker-.git
-        cd React-Task-Tracker
+      - cd React-Task-Tracker
 2.  Install dependencies
       -  npm install
 3.  Start the development server
@@ -31,35 +31,35 @@ A React-based Task Tracker with a mock backend powered by JSON Server. This appl
     - Tasks are stored on the backend (JSON server) and persist even after refreshing the browser.
 
 2. Edit Tasks
-        - Edit task details (name, date, time, and reminder status) by clicking the "edit" icon.
-        - Changes are updated on the backend and reflected in the application.
+    - Edit task details (name, date, time, and reminder status) by clicking the "edit" icon.
+    - Changes are updated on the backend and reflected in the application.
 
 3.  Delete Tasks
-        - Delete tasks by clicking the delete icon.
-        - The deletion updates the backend and removes the task from the list, even after refreshing.
+    - Delete tasks by clicking the delete icon.
+    - The deletion updates the backend and removes the task from the list, even after refreshing.
 
 4.  Set Reminders
-        - Tasks with reminders are visually highlighted, indicating the reminder is active.
-        - Double-click any task to toggle a reminder. Tasks with reminders are highlighted with a 5px green border.
+    - Tasks with reminders are visually highlighted, indicating the reminder is active.
+    - Double-click any task to toggle a reminder. Tasks with reminders are highlighted with a 5px green border.
 
 
 ## JSON Server Setup
 1.  Port: 5000
 2.  Endpoints:
-    i)  Base URL: http://localhost:5000/
-    ii) Tasks: http://localhost:5000/tasks
+    - Base URL: http://localhost:5000/
+    - Tasks: http://localhost:5000/tasks
 3.  Database File: db.json (located in the root directory)
-        {
-            "tasks": [
-                {
-                "id": "1",
-                "text": "Doctors Appointment",
-                "day": "Feb 5th at 2:30pm",
-                "reminder": true
-                },
-                ...
-            ]
-        }
+    {
+        "tasks": [
+            {
+            "id": "1",
+            "text": "Doctors Appointment",
+            "day": "Feb 5th at 2:30pm",
+            "reminder": true
+            },
+            ...
+        ]
+    }
 
 
 ## Core Code Snippets
@@ -106,13 +106,13 @@ A React-based Task Tracker with a mock backend powered by JSON Server. This appl
 -   Check the package.json file for all dependencies.
 
 
-### Application Screenshots
+## Application Screenshots
 
 ### Home Page
-![Task Tracker Home Page](./Home.png)
+![Task Tracker Home Page](./src/assets/Home.png)
 
 ### Add Task Page
-![Task Tracker Add Task](./Add-Task.png)
+![Task Tracker Add Task](./src/assets/Add-Task.png)
 
 
 ## Future Enhancements
